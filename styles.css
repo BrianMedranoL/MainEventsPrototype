@@ -83,7 +83,7 @@ p {
   font-style: bold;
 }
 .searchIcon::after {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   margin-right: 30px;
   content: "\26B2";
