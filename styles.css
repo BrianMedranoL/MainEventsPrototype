@@ -133,7 +133,7 @@ p {
   font-size: 20px;
   margin-left: 1px;
 }
-@media screen and (max-width: 1011px) {
+@media (max-width: 961px) {
   .textbox{
     width: 300px;
     margin-left: auto;
