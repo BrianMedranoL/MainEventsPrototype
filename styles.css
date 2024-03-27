@@ -134,8 +134,11 @@ p {
   margin-left: 1px;
 }
 @media screen and (max-width: 1011px) {
-   body{
-    margin-left: 600px;
-   }
+  .textbox{
+    width: 300px;
+}
+  p{
+    width: 300px;
   }
+}
   
