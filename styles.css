@@ -133,7 +133,7 @@ p {
   font-size: 20px;
   margin-left: 1px;
 }
-@media (max-width: 1011px) {
+@media screen and (max-width: 1011px) {
    body{
     margin-left: 400px;
    }
