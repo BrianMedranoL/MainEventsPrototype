@@ -135,14 +135,14 @@ p {
   font-size: 20px;
   margin-left: 1px;
 }
-@media (max-width: 961px) {
+@media (max-width: 1400px) {
   .textbox{
   
-    margin-left: 200px;
+    margin-left: 550px;
 }
 
 .phone{
-    margin-left: 200px;
+    margin-left: 500px;
 }
 
 }
