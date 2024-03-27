@@ -137,13 +137,10 @@ p {
 }
 @media (max-width: 961px) {
   .textbox{
-    width: 300px;
-    margin-left: auto;
+  
+    margin-left: 200px;
 }
-  p{
-    width: 300px;
-    margin-left: auto;
-}
+
 .phone{
     margin-left: 200px;
 }
