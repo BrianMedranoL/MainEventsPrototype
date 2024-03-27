@@ -136,9 +136,15 @@ p {
 @media screen and (max-width: 1011px) {
   .textbox{
     width: 300px;
+    margin-left: auto;
 }
   p{
     width: 300px;
-  }
+    margin-left: auto;
+}
+.phone{
+    margin-left: auto;
+}
+
 }
   
