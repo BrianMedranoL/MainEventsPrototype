@@ -26,14 +26,156 @@
 
     <div class="phone">
       <div class="topbar">
-       <div class = "iconContainer">
-        <div id="exit" class="exitIcon"></div>
-        <div id="title" class="eventsTitle">Events</div>
-        <div class = "searchAndFilter">
-          <div id="filter" class="filterIcon"></div>
-          <div id="search" class="searchIcon"></div>
+        <div class="iconContainer">
+          <div id="exit" class="exitIcon"></div>
+          <div id="title" class="eventsTitle">Events</div>
+          <div class="searchAndFilter">
+            <div id="filter" class="filterIcon"></div>
+            <div id="search" class="searchIcon"></div>
+          </div>
         </div>
-      </div>
+        <div class="filterItems">
+          <input
+            type="search"
+            placeholder="Search"
+            id="searchbar"
+            name="searchb"
+            class="fillStyle"
+          />
+
+          <input
+            class="fillStyle"
+            list="filterOptions"
+            id="filterInput1"
+            placeholder="Date"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions0"
+            id="filterInput0"
+            placeholder="Time"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions2"
+            id="filterInput2"
+            placeholder="Meeting Style"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions3"
+            id="filterInput3"
+            placeholder="Branch"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions4"
+            id="filterInput4"
+            placeholder="Theme"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions5"
+            id="filterInput5"
+            placeholder="Category"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions6"
+            id="filterInput6"
+            placeholder="Perks"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions7"
+            id="filterInput7"
+            placeholder="Organization"
+          />
+          <input
+            class="fillStyle"
+            list="filterOptions8"
+            id="filterInput8"
+            placeholder="Location"
+          />
+          <datalist id="filterOptions">
+            <option value="Today"></option>
+            <option value="Tomorrow"></option>
+            <option value="Custom"></option>
+          </datalist>
+          <datalist id="filterOptions0">
+            <option value="Start Time"></option>
+            <option value="End Time"></option>      
+          </datalist>
+          <datalist id="filterOptions2">
+            <option value="Online"></option>
+            <option value="In-Person"></option>
+            <option value="Hybrid"></option>
+          </datalist>
+          <datalist id="filterOptions3">
+            <option value="Campus Department"></option>
+            <option value="Student Organizations"></option>
+          </datalist>
+          <datalist id="filterOptions4">
+            <option value="Arts & Music"></option>
+            <option value="Athletics"></option>
+            <option value="Cultural"></option>
+            <option value="Fundraising"></option>
+            <option value="Group Business"></option>
+            <option value="Learning"></option>
+            <option value="Service"></option>
+            <option value="Social"></option>
+            <option value="Spirituality"></option>
+          </datalist>
+          <datalist id="filterOptions5">
+            <option value="Academic"></option>
+            <option value="Career Success"></option>
+            <option value="College of Engineering"></option>
+            <option value="Community (Pharmacy)"></option>
+            <option value="Enriched Learning (Residence Life & Housing)"></option>
+            <option value="Greek"></option>
+            <option value="Health Science Center"></option>
+            <option value="Houston Engineering Center"></option>
+            <option value="Innovation and Enterpreneurship"></option>
+            <option value="Intercultural Awareness (Residence Life & Housing)"></option>
+            <option value="Liberty Landing"></option>
+            <option value="Multicultural/International"></option>
+            <option value="Nursing"></option>
+            <option value="Ornelas Hall"></option>
+            <option value="Patriot Village"></option>
+          </datalist>
+          <datalist id="filterOptions6">
+            <option value="Academic"></option>
+            <option value="Career Success"></option>
+            <option value="College of Engineering"></option>
+          </datalist>
+          <datalist id="filterOptions7">
+            <option value="My Organizations "></option>
+            <option value="Academic Success"></option>
+            <option value="Academy of Future Health Professionals"></option>
+            <option value="African Student Organization"></option>
+            <option value="Alpha Chi Omega"></option>
+            <option value="Alpha Tau Omega"></option>
+            <option value="Alumni Engagement"></option>
+            <option value="AMA/TMA Chapter at UT-Tyler SOM"></option>
+            <option value="American Chemical Socity"></option>
+            <option value="American Institute of Chemical Engineers"></option>
+            <option value="American Marketing Association"></option>
+            <option value="American Pharmacist Association"></option>
+          </datalist>
+          <datalist id="filterOptions8">
+            <option value="Alumni House"></option>
+            <option value="Auxiliary Buildings (AX1)(AX2)"></option>
+            <option value="BAQE Houses AX4"></option>
+            <option value="Braithwaite Gardens"></option>
+            <option value="Campus Police (USC)"></option>
+            <option value="Campus Utilities (PPN) (PPS)"></option>
+            <option value="Center for the Musical Arts (FAC)"></option>
+            <option value="Citizen's 1st Bank Perkins Soccer Complex"></option>
+            <option value="College of Arts and Sciences (CAS)"></option>
+            <option value="College of Education and Psychology (BEP)"></option>
+            <option value="College of Engineering (RBN)(RBS)"></option>
+          </datalist>
+        </div>
       </div>
       <div class="phoneContent">
         <div class="date">Today</div>

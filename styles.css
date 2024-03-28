@@ -29,20 +29,17 @@ p {
   color: rgb(170, 170, 170);
 }
 
-#filter{
+#filter {
   color: rgb(255, 255, 255);
 }
-.filterIcon::after{
- 
+.filterIcon::after {
   margin-top: 10px;
   display: flex;
   margin-right: 15px;
   content: "\20B8";
   font-size: 23px;
-  
 }
 .phone {
- 
   margin-bottom: 75px;
   background-color: rgb(0, 0, 0);
   width: 320px;
@@ -61,7 +58,6 @@ p {
 }
 
 .phoneContent {
-  
   z-index: 1;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -73,14 +69,12 @@ p {
   padding: 10px;
   overflow-x: hidden;
   flex: 1;
-
 }
 .phoneContent::-webkit-scrollbar {
   display: none;
 }
-.iconContainer{
-
-  top:0;
+.iconContainer {
+  top: 0;
   position: absolute;
   height: 65px;
   width: 100%;
@@ -89,11 +83,9 @@ p {
   align-items: center;
 }
 .topbar {
- 
- 
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 20px;
-  background-color: rgba(94, 94, 94, 0.267); 
+  background-color: rgba(94, 94, 94, 0.267);
   /*background-color: rgb(25, 25, 25); */
   height: 65px;
   width: 100%;
@@ -103,7 +95,7 @@ p {
 }
 .bottombar {
   z-index: 1;
-  background-color: rgba(94, 94, 94, 0.267); 
+  background-color: rgba(94, 94, 94, 0.267);
   bottom: 0;
   position: absolute;
 
@@ -131,8 +123,46 @@ p {
   font-size: 25px;
   font-style: bold;
 }
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.filterItems {
+  margin-left: 10px;
+}
+.fillStyle {
+  padding-left: 4px;
+  margin-bottom: 10px;
+  opacity: 0;
+  display: none;
+  background-color: rgba(44, 44, 44, 0.397);
+  text-align: center;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(255, 255, 255);
+  border: 10px;
+  font-size: 17px;
+  border-radius: 4px;
+  width: 295px;
+  height: 35px;
+  outline: none;
+}
+#searchbar::placeholder {
+  color: rgb(172, 172, 172);
+}
+#searchbar {
+ margin-top: 75px;
+  border-radius: 0px;
+  border-bottom: 1px white solid;
+  width: 300px;
+  height: 35px;
+  text-align: left;
+  padding: 10px;
+  background-color: transparent !important;
+}
+
 .searchIcon::after {
- 
   margin-top: 10px;
   display: flex;
   margin-right: 25px;
@@ -180,7 +210,7 @@ p {
 .events {
   display: flex;
   margin-bottom: 15px;
- /* backdrop-filter: blur(10px); */
+  /* backdrop-filter: blur(10px); */
   width: 100%;
   height: 90px;
   scrollbar-width: none;
@@ -206,41 +236,89 @@ p {
     margin-left: 500px;
   }
 }
-@keyframes topbarExpand{
-from {
-height: 65px;
-}
-to {
-height: 568px;
-}
-}
-@keyframes topbarClose{
+@keyframes topbarExpand {
   from {
-  height: 568px;
+    height: 65px;
   }
   to {
-  height: 65px;
+    height: 568px;
   }
 }
 
-@keyframes remove{
+@keyframes topbarClose {
+  from {
+    height: 568px;
+  }
+  to {
+    height: 65px;
+  }
+}
+
+@keyframes remove {
   from {
     display: block;
-   
+  opacity: 1;
   }
-to{
-   display: none;
-   
+  to {
+    opacity: 0;
+    display: none;
   }
 }
 
-@keyframes add{
+@keyframes add {
   from {
     display: none;
-  
   }
-to{
-   display: block;
-  
+  to {
+    display: block;
+  }
+}
+@keyframes searchExpand {
+  from {
+    height: 65px;
+  }
+  to {
+    height: 130px;
+  }
+}
+
+@keyframes searchClose {
+  from {
+    height: 130px;
+  }
+  to {
+    height: 65px;
+  }
+}
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+To {
+  opacity: 1;
+}
+}
+@keyframes fadeOut{
+  from {
+    opacity: 1;
+  }
+To {
+  opacity: 0;
+}
+}
+@keyframes removeFlex {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes addFlex {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
   }
 }
