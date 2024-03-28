@@ -65,7 +65,7 @@ iconColor.addEventListener('input', function() {
  
  filterStyle.forEach(event => {
   event.style.color = colorx;
-});
+ });
  
   
   filter.style.color = colorx;
@@ -107,7 +107,8 @@ search.addEventListener('click', function() {
     searchBar.style.display = 'none';
     
   } else {
-   
+    searchBar.style.animation = 'fadeIn 0.7s ease 0.1s normal forwards';
+
    topBar.style.animation = 'searchExpand 0.3s ease 0.1s normal forwards';
    searchBar.style.display = 'flex';
    phoneCon.style.marginBottom = '65px';
