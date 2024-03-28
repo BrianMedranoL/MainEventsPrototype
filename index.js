@@ -88,13 +88,13 @@ filter.addEventListener('click', function() {
   if (topBar.style.animationName === 'topbarExpand') {
     topBar.style.animation = 'topbarClose 0.4s ease 0s normal forwards';
     phoneCon.style.animation = 'add 0.4s ease 0s normal forwards';
-   
+    title.textContent = 'Events';
     filterStyle.forEach(event => {
       event.style.display = 'none';
     });
   
   } else {
-   
+    title.textContent = 'Filters';
    topBar.style.animation = 'topbarExpand 0.5s ease 0.1s normal forwards';
    phoneCon.style.animation = 'remove 0.12s ease 0s normal forwards';
    phoneCon.style.marginBottom = '65px';
@@ -114,10 +114,10 @@ search.addEventListener('click', function() {
   else if (topBar.style.animationName === 'searchExpand') {
     topBar.style.animation = 'searchClose 0.4s ease 0s normal forwards';
     searchBar.style.display = 'none';
-    
+    title.textContent = 'Events';
   } else {
     searchBar.style.animation = 'fadeIn 0.7s ease 0.1s normal forwards';
-
+    title.textContent = 'Search';
    topBar.style.animation = 'searchExpand 0.3s ease 0.1s normal forwards';
    searchBar.style.display = 'flex';
    phoneCon.style.marginBottom = '65px';
@@ -134,11 +134,11 @@ exitIcons.addEventListener('click', function() {
   else if (topBar.style.animationName === 'calanderExpand') {
     topBar.style.animation = 'calanderClose 0.4s ease 0s normal forwards';
     realC.style.display = 'none';
-    
+    title.textContent = 'Events';
   } else {
     realC.style.animation = 'fadeIn 1s ease 0.1s normal forwards';
 
-
+    title.textContent = 'Calander';
    topBar.style.animation = 'calanderExpand 0.3s ease 0.1s normal forwards';
    searchBar.style.display = 'none';
    phoneCon.style.marginBottom = '65px';
