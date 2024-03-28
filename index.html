@@ -5,48 +5,54 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-   <div class = "textbox">
-    <p>This is the prototype I made for the Main Events tab, the scroll will bug out if you scroll too far down/up, just click out and click back in. Also I give credit to Elizabeth because I used her template
-      to make this.
-      All the icons/fonts are just placeholders. I took the liberty of adding a searchbar 
-      icon because its one of the requirements.
-      Btw use this silder to adjust the box sizes.(Default is 90)
+    <div class="textbox">
+      <p>
+        This is the prototype I made for the Main Events tab, the scroll will
+        bug out if you scroll too far down/up, just click out and click back in.
+        Also I give credit to Elizabeth because I used her template to make
+        this. All the icons/fonts are just placeholders. I took the liberty of
+        adding a searchbar icon because its one of the requirements. Btw use
+        this silder to adjust the box sizes.(Default is 90)
       </p>
-      <input type="range" min="0" max="215" value="0" id="slider"> 
+      <input type="range" min="0" max="215" value="0" id="slider" />
       <span id="sliderValue">0</span>
-      <p>Background <input type="color" id="colorBackground" value="#ff0000"></p>
-      <p>Top/Bottom Bar <input type="color" id="colorBar" value="#ff0000"></p>
-      <p>Event Box <input type="color" id="colorEvent" value="#ff0000"></p>
-      <p>Icons/Text <input type="color" id="colorIcon" value="#ff0000"></p>
-
+      <p>
+        Background <input type="color" id="colorBackground" value="#ff0000" />
+      </p>
+      <p>Top/Bottom Bar <input type="color" id="colorBar" value="#ff0000" /></p>
+      <p>Event Box <input type="color" id="colorEvent" value="#ff0000" /></p>
+      <p>Icons/Text <input type="color" id="colorIcon" value="#ff0000" /></p>
     </div>
-   
+
     <div class="phone">
       <div class="topbar">
-        <div id = "exit" class="exitIcon"></div>
-        <div id = "title" class="eventsTitle">Events</div>
-        <div id = "search" class="searchIcon"></div>
+        <div id="exit" class="exitIcon"></div>
+        <div id="title" class="eventsTitle">Events</div>
+        <div class = "searchAndFilter">
+          <div id="filter" class="filterIcon"></div>
+          <div id="search" class="searchIcon"></div>
+        </div>
       </div>
       <div class="phoneContent">
-        <div  class="date"> Today</div>
+        <div class="date">Today</div>
         <div class="events"></div>
         <div class="events"></div>
-        <div  class="date"> Tomorrow</div>
+        <div class="date">Tomorrow</div>
         <div class="events"></div>
         <div class="events"></div>
-        <div  class="date"> This Week</div>
+        <div class="date">This Week</div>
         <div class="events"></div>
         <div class="events"></div>
-        <div  class="date"> This Month</div>
+        <div class="date">This Month</div>
         <div class="events"></div>
         <div class="events"></div>
       </div>
       <div class="bottombar">
-        <div id = "icon1" class="calanderIcon"></div>
-        <div id = "icon2" class="calanderIcon"></div>
-        <div id = "icon3" class="calanderIcon"></div>
-        <div id = "icon4" class="calanderIcon"></div>
-        <div id = "icon5" class="calanderIcon"></div>
+        <div id="icon1" class="calanderIcon"></div>
+        <div id="icon2" class="calanderIcon"></div>
+        <div id="icon3" class="calanderIcon"></div>
+        <div id="icon4" class="calanderIcon"></div>
+        <div id="icon5" class="calanderIcon"></div>
       </div>
     </div>
 

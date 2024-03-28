@@ -25,7 +25,18 @@ p {
   font-family: Menlo, monospace;
   font-size: 20px;
 }
-
+#filter{
+  color: rgb(255, 255, 255);
+}
+.filterIcon::after{
+ 
+  margin-top: 10px;
+  display: flex;
+  margin-right: 15px;
+  content: "\20B8";
+  font-size: 23px;
+  
+}
 .phone {
   margin-bottom: 75px;
   background-color: rgb(0, 0, 0);
@@ -39,6 +50,11 @@ p {
   flex-direction: column;
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.568);
 }
+.searchAndFilter {
+  display: flex;
+  align-items: center;
+}
+
 .phoneContent {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -54,6 +70,7 @@ p {
   display: none;
 }
 .topbar {
+ 
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 20px;
   background-color: rgba(94, 94, 94, 0.267);
@@ -81,7 +98,7 @@ p {
 #search {
   color: rgb(255, 255, 255);
 }
-.exitIcon::before {
+.exitIcon::after {
   margin-top: 5px;
   display: block;
   margin-left: 27px;
@@ -90,9 +107,10 @@ p {
   font-style: bold;
 }
 .searchIcon::after {
+ 
   margin-top: 10px;
   display: flex;
-  margin-right: 30px;
+  margin-right: 25px;
   content: "\26B2";
   font-size: 30px;
   transform: rotate(315deg);
@@ -132,6 +150,7 @@ p {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-top: 10px;
+  margin-left: 24px;
 }
 .events {
   display: flex;

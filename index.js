@@ -12,6 +12,7 @@ const date = document.querySelectorAll('.date');
 const exitIcons = document.getElementById('exit');
 const title = document.getElementById('title');
 const search = document.getElementById('search');
+const filter = document.getElementById('filter');
 
 const calander1 = document.getElementById('icon1');
 const calander2 = document.getElementById('icon2');
@@ -54,7 +55,7 @@ iconColor.addEventListener('input', function() {
   calander3.style.color = colorx;
   calander4.style.color = colorx;
   calander5.style.color = colorx;
-  
+  filter.style.color = colorx;
   date.forEach(event => {
     event.style.color = colorx;
   });
