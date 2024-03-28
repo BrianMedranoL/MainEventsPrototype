@@ -1,6 +1,7 @@
 const slider = document.getElementById('slider');
 const sliderValue = document.getElementById('sliderValue');
 const events = document.querySelectorAll('.events');
+
 const backgroundColor = document.getElementById('colorBackground');
 const barColor = document.getElementById('colorBar');
 const eventColor = document.getElementById('colorEvent');
@@ -13,7 +14,7 @@ const exitIcons = document.getElementById('exit');
 const title = document.getElementById('title');
 const search = document.getElementById('search');
 const filter = document.getElementById('filter');
-
+const phoneCon = document.querySelector('.phoneContent');
 const calander1 = document.getElementById('icon1');
 const calander2 = document.getElementById('icon2');
 const calander3 = document.getElementById('icon3');
@@ -62,3 +63,14 @@ iconColor.addEventListener('input', function() {
   
 });
 
+filter.addEventListener('click', function() {
+  if (topBar.style.animationName === 'topbarExpand') {
+    topBar.style.animation = 'topbarClose 0.4s ease 0s normal forwards';
+    phoneCon.style.animation = 'add 0.4s ease 0s normal forwards';
+    
+  } else {
+   
+   topBar.style.animation = 'topbarExpand 0.3s ease 0.1s normal forwards';
+   phoneCon.style.animation = 'remove 0.3s ease 0s normal forwards';
+  }
+});
