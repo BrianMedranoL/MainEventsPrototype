@@ -21,6 +21,8 @@ const calander3 = document.getElementById('icon3');
 const calander4 = document.getElementById('icon4');
 const calander5 = document.getElementById('icon5');
 const filterStyle = document.querySelectorAll('.fillStyle');
+const inputElement = document.querySelectorAll('input');
+
 slider.addEventListener('input', function() {
   const value = parseInt(slider.value);
   sliderValue.textContent = value;
@@ -60,8 +62,10 @@ iconColor.addEventListener('input', function() {
   calander3.style.color = colorx;
   calander4.style.color = colorx;
   calander5.style.color = colorx;
-  
-  
+ 
+ filterStyle.forEach(event => {
+  event.style.color = colorx;
+});
  
   
   filter.style.color = colorx;
