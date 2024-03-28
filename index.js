@@ -22,6 +22,9 @@ const calander4 = document.getElementById('icon4');
 const calander5 = document.getElementById('icon5');
 const filterStyle = document.querySelectorAll('.fillStyle');
 const inputElement = document.querySelectorAll('input');
+const realC = document.querySelector('.realC');
+const days = document.querySelectorAll('.days');
+const daysBar = document.getElementById('realDays');
 
 slider.addEventListener('input', function() {
   const value = parseInt(slider.value);
@@ -62,7 +65,7 @@ iconColor.addEventListener('input', function() {
   calander3.style.color = colorx;
   calander4.style.color = colorx;
   calander5.style.color = colorx;
- 
+  realC.style.color = colorx;
  filterStyle.forEach(event => {
   event.style.color = colorx;
  });
@@ -72,10 +75,16 @@ iconColor.addEventListener('input', function() {
   date.forEach(event => {
     event.style.color = colorx;
   });
+  days.forEach(event => {
+    event.style.color = colorx;
+  });
+  daysBar.style.borderBottomColor = colorx;
+  searchBar.style.borderColor = colorx;
   
 });
 
 filter.addEventListener('click', function() {
+  realC.style.display = 'none';
   if (topBar.style.animationName === 'topbarExpand') {
     topBar.style.animation = 'topbarClose 0.4s ease 0s normal forwards';
     phoneCon.style.animation = 'add 0.4s ease 0s normal forwards';
@@ -97,11 +106,11 @@ filter.addEventListener('click', function() {
 });
 
 search.addEventListener('click', function() {
-  
+  realC.style.display = 'none';
   if (topBar.style.animationName === 'topbarExpand') {
   return 0;
   }
-  
+
   else if (topBar.style.animationName === 'searchExpand') {
     topBar.style.animation = 'searchClose 0.4s ease 0s normal forwards';
     searchBar.style.display = 'none';
@@ -116,4 +125,25 @@ search.addEventListener('click', function() {
 
 });
 
+exitIcons.addEventListener('click', function() {
+  
+  if (topBar.style.animationName === 'topbarExpand') {
+  return 0;
+  }
+  
+  else if (topBar.style.animationName === 'calanderExpand') {
+    topBar.style.animation = 'calanderClose 0.4s ease 0s normal forwards';
+    realC.style.display = 'none';
+    
+  } else {
+    realC.style.animation = 'fadeIn 1s ease 0.1s normal forwards';
+
+
+   topBar.style.animation = 'calanderExpand 0.3s ease 0.1s normal forwards';
+   searchBar.style.display = 'none';
+   phoneCon.style.marginBottom = '65px';
+   realC.style.display = 'block';
+  }
+
+});
 
