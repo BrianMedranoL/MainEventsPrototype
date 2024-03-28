@@ -102,7 +102,7 @@ p {
   align-items: center;
 }
 .bottombar {
-  
+  z-index: 1;
   background-color: rgba(94, 94, 94, 0.267); 
   bottom: 0;
   position: absolute;
@@ -226,19 +226,21 @@ height: 568px;
 @keyframes remove{
   from {
     display: block;
-    opacity: 1;
+   
   }
 to{
    display: none;
-    opacity: 0;
+   
   }
 }
 
 @keyframes add{
   from {
     display: none;
+  
   }
 to{
    display: block;
-}
+  
+  }
 }
