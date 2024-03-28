@@ -116,11 +116,11 @@ p {
   color: rgb(255, 255, 255);
 }
 .exitIcon::after {
-  margin-top: 5px;
+  margin-top: 7px;
   display: block;
   margin-left: 27px;
-  content: "\276E";
-  font-size: 25px;
+  content: "\268D";
+  font-size: 30px;
   font-style: bold;
 }
 input::placeholder {
@@ -206,7 +206,7 @@ input::placeholder {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 24px;
+  margin-left: 10px;
 }
 .events {
   display: flex;
