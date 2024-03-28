@@ -9,8 +9,8 @@ body {
 }
 
 .textbox {
- margin-top: 200px;
-    width: 500px;
+  margin-top: 200px;
+  width: 500px;
   margin-right: 950px;
   margin-bottom: 350px;
   font-family: Menlo, monospace;
@@ -28,7 +28,7 @@ p {
 
 .phone {
   margin-bottom: 75px;
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   width: 320px;
   height: 633px;
   border: transparent 1px;
@@ -65,7 +65,6 @@ p {
 }
 .bottombar {
   background-color: rgba(94, 94, 94, 0.267);
-
   height: 65px;
   width: 100%;
   display: flex;
@@ -73,22 +72,20 @@ p {
   justify-content: space-evenly;
   align-items: center;
 }
-#exit{
-  color: rgb(255, 255, 255);
-
-}
-#title{
+#exit {
   color: rgb(255, 255, 255);
 }
-#search{
- color: rgb(255, 255, 255);
+#title {
+  color: rgb(255, 255, 255);
+}
+#search {
+  color: rgb(255, 255, 255);
 }
 .exitIcon::before {
   margin-top: 5px;
   display: block;
   margin-left: 27px;
   content: "\276E";
-  
   font-size: 25px;
   font-style: bold;
 }
@@ -97,7 +94,6 @@ p {
   display: flex;
   margin-right: 30px;
   content: "\26B2";
- 
   font-size: 30px;
   transform: rotate(315deg);
 }
@@ -108,17 +104,29 @@ p {
 .exitIcon:hover::after {
   color: rgb(170, 170, 170);
 }
+#icon1 {
+  color: rgb(255, 255, 255);
+}
+#icon2 {
+  color: rgb(255, 255, 255);
+}
+#icon3 {
+  color: rgb(255, 255, 255);
+}
+#icon4 {
+  color: rgb(255, 255, 255);
+}
+#icon5 {
+  color: rgb(255, 255, 255);
+}
 .calanderIcon::after {
   margin-top: 1px;
   display: flex;
-
   content: "\2630";
-  color: rgb(255, 255, 255);
   font-size: 28px;
-  filter: grayscale(100%);
 }
 .calanderIcon:hover::after {
-    color: rgb(170, 170, 170);
+  color: rgb(170, 170, 170);
 }
 .eventsTitle {
   color: rgb(255, 255, 255);
@@ -146,14 +154,11 @@ p {
   margin-left: 1px;
 }
 @media (max-width: 1400px) {
-  .textbox{
-  
+  .textbox {
     margin-left: 550px;
-}
+  }
 
-.phone{
+  .phone {
     margin-left: 500px;
+  }
 }
-
-}
-  

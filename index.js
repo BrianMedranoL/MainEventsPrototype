@@ -49,6 +49,11 @@ iconColor.addEventListener('input', function() {
   exitIcons.style.color = colorx;
   title.style.color = colorx;
   search.style.color = colorx;
+  calander1.style.color = colorx;
+  calander2.style.color = colorx;
+  calander3.style.color = colorx;
+  calander4.style.color = colorx;
+  calander5.style.color = colorx;
   
   date.forEach(event => {
     event.style.color = colorx;
